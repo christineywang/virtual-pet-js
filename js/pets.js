@@ -12,6 +12,14 @@ var petInfo = {
 
 $(function() {
 
+  //Extra credit - dog disappers on click
+  $('.pet-image').click(clickedImage);
+
+  function clickedImage() {
+      $(document).ready(function(){
+        $('.pet-image').css('visibility', 'hidden');
+    });
+  }
 
 // Called function to update the name, happiness, and weight of our pet in our HTML
 checkAndUpdatePetInfoInHtml();
